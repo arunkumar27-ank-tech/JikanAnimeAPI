@@ -17,7 +17,7 @@ const Naruto = ({naru}) => {
                         <Image style={{width:'15rem'}} src={nar.image_url} fluid /> 
                       
                         <Card.Title style={{position:"absolute", right:"0px", top:"0px", left:"30rem"}}>Synopsis:{nar.synopsis}</Card.Title>
-                        <Card.Subtitle className="mb-6 text">{nar.title}</Card.Subtitle>
+                        <Card.Subtitle style={{Text:"bold"}} className="mb-6 text">{nar.title}</Card.Subtitle>
                         <Card.Text style={{position:"absolute", right:"0px", top:"10rem", left:"30rem"}}>
                         Toatl Epsiodes :{nar.episodes}<br></br>
                         Score          :{nar.score}<br></br>
