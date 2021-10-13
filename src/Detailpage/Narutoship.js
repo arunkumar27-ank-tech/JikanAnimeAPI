@@ -8,7 +8,7 @@ const Narutoship = ({narutoship}) => {
             {narutoship.map(nar=>(
                <div>
             
-               <Card style={{ position:'absolute' ,width: '59rem', height:'24rem', left:'140px', top:'140px', borderColor:'red', borderWidth:'4px', borderRadius:'50%' }}>
+               <Card style={{ position:'absolute' ,width: '59rem', height:'24rem', left:'140px', top:'140px', borderColor:'red', borderWidth:'4px' }}>
                
                     <Card.Body>
                         <Image style={{width:'15rem'}} src={nar.image_url} fluid /> 

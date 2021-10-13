@@ -13,6 +13,7 @@ import Naruto from './Detailpage/Naruto';
 import HEader from './components/HEader';
 import Nav from './components/Bootstrap';
 import Mainpage from './components/Mainpage';
+import Chart from './chart/Pie'
 require('firebase/auth')
 
 
@@ -117,6 +118,13 @@ function App() {
   const boruto = items.slice(3,4)
   const narumov = items.slice(4,5)
   console.log(naru)
+  const tv = items.map(item=>(item.type))
+  console.log(tv)
+  const counts = {};
+  for (const num of tv) {
+    counts[num] = counts[num] ? counts[num] + 1 : 1;
+  }
+  console.log(counts)
 
 
 
@@ -127,6 +135,7 @@ function App() {
         <div>
         <HEader handleLogOut={handleLogOut}/>
         <Nav handleLogOut={handleLogOut}/>
+        <Route path='/' exact><Chart counts={counts}/></Route>
         <Route path="/" exact><Mainpage items={items}/></Route>
         <Route path="/Naruto" ><Naruto naru={naru}/></Route>
         <Route path="/Narutoshippuden" ><Narutoship narutoship={narutoship}/></Route>

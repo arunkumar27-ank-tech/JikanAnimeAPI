@@ -7,7 +7,7 @@ function Nav(handleLogOut) {
   useEffect(() => {
     const navs = [
       { name: "Naruto", path: "/Naruto" },
-      { name: "NAruto_shippuden", path: "/Narutoshippuden" },
+      { name: "Naruto_shippuden", path: "/Narutoshippuden" },
       { name: "thelastnaruto", path: "/lastnaruto" },
       { name: "Boruto", path: "/Boruto" },
       { name: "NarutoMovie", path: "/Narutomovie" },

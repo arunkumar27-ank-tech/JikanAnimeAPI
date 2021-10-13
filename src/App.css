@@ -42,3 +42,8 @@
 .logout:hover{
     background-color: rgb(165, 42, 134);
 }
+.chart{
+    position: absolute;
+    right:20px;
+    top:140px;
+}
