@@ -5,7 +5,6 @@ import {Card,Image} from 'react-bootstrap'
 const Mainpage = ({items}) => {
     return (
         <div>
-            <h1>Main Page</h1>
             
             <Card style={{width:'60rem',height:'75rem'}}>
             {items.map(item=>(
