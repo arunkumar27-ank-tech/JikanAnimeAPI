@@ -76,7 +76,7 @@ function App() {
   }
 
   const handleLogOut=()=>{
-    signOut()
+    signOut(auth)
   }
 
   const authListener=()=>{
@@ -125,7 +125,7 @@ function App() {
     <div className="App">
       {user?(
         <div>
-        <HEader />
+        <HEader handleLogOut={handleLogOut}/>
         <Nav/>
         <Route path="/" exact><Mainpage items={items}/></Route>
         <Route path="/Naruto" ><Naruto naru={naru}/></Route>
