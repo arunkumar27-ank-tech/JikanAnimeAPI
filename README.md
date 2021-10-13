@@ -1,3 +1,8 @@
+This in a simple AnimeAPI application
+Backend and authentication : Firebase
+Frontend : ReactJS
+API used : JikanAnimeAPI
+UI design : AntDesign, React-Bootstrap
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
