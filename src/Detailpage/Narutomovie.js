@@ -7,7 +7,7 @@ const Narutomovie = ({narumov}) => {
             {narumov.map(nar=>(
                <div>
             
-               <Card style={{position:'absolute' ,width: '59rem', height:'25rem', left:'70px' }}>
+               <Card style={{position:'absolute' ,width: '59rem', height:'24rem', left:'140px', top:'140px', borderColor:'red', borderWidth:'4px'}}>
                
                     <Card.Body>
                         <Image style={{width:'15rem'}} src={nar.image_url} fluid /> 

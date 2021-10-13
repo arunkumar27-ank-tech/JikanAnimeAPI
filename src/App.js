@@ -126,7 +126,7 @@ function App() {
       {user?(
         <div>
         <HEader handleLogOut={handleLogOut}/>
-        <Nav/>
+        <Nav handleLogOut={handleLogOut}/>
         <Route path="/" exact><Mainpage items={items}/></Route>
         <Route path="/Naruto" ><Naruto naru={naru}/></Route>
         <Route path="/Narutoshippuden" ><Narutoship narutoship={narutoship}/></Route>

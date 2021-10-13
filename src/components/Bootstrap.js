@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-function Nav() {
+function Nav(handleLogOut) {
   const [navLinks, setNavLinks] = useState([]);
 
   useEffect(() => {
@@ -32,7 +32,9 @@ function Nav() {
               style={{fontFamily:'fantasy'}}
             >
               ANIME
+              
             </button>
+
             <ul class="dropdown-menu dropdown-menu-end">
               {navLinks.map((d, i) => (
                 <li key={i}>
