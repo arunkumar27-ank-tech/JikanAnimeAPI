@@ -6,10 +6,10 @@ const Mainpage = ({items}) => {
     return (
         <div>
             
-            <Card style={{width:'60rem',height:'75rem'}}>
+            <Card style={{width:'60rem',height:'50rem'}}>
             {items.map(item=>(
                 <div>
-                <Image style={{width:"10rem", height:'15rem'}} src={item.image_url} roundedCircle /> </div>
+                <Image style={{width:"7rem", height:'10rem'}} src={item.image_url} roundedCircle /> </div>
                 ))}
                
             </Card>

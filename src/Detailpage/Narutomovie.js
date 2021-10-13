@@ -7,12 +7,12 @@ const Narutomovie = ({narumov}) => {
             {narumov.map(nar=>(
                <div>
             
-               <Card style={{ width: '70rem', height:'25rem' }}>
+               <Card style={{position:'absolute' ,width: '59rem', height:'25rem', left:'70px' }}>
                
                     <Card.Body>
                         <Image style={{width:'15rem'}} src={nar.image_url} fluid /> 
                       
-                        <Card.Title style={{position:"absolute", right:"0px", top:"0px", left:"30rem"}}>Synopsis:{nar.synopsis}</Card.Title>
+                        <Card.Title style={{position:"absolute", right:"0px", top:"0px", left:"30rem", fontFamily:'monospace'}}>Synopsis:{nar.synopsis}</Card.Title>
                         <Card.Subtitle className="mb-6 text">{nar.title}</Card.Subtitle>
                         <Card.Text style={{position:"absolute", right:"0px", top:"10rem", left:"30rem"}}>
                         Toatl Epsiodes :{nar.episodes}<br></br>

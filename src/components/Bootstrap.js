@@ -29,8 +29,9 @@ function Nav() {
               data-bs-toggle="dropdown"
               data-bs-display="static"
               aria-expanded="false"
+              style={{fontFamily:'fantasy'}}
             >
-              Anime
+              ANIME
             </button>
             <ul class="dropdown-menu dropdown-menu-end">
               {navLinks.map((d, i) => (
