@@ -2,18 +2,36 @@ import React from 'react'
 import {Card,Image} from 'react-bootstrap'
 
 
-const Mainpage = ({items}) => {
+const Mainpage = ({items,naru ,narutoship ,lastnarut,
+    boruto, narumov}) => {
     return (
         <div>
+            <div className='gridmain'>
             
-            <Card style={{width:'20rem',height:'50rem'}}>
-            {items.map(item=>(
-                <div>
-                <Image style={{width:"7rem", height:'10rem', padding:'5px'}} src={item.image_url} fluid /> </div>
+            <div class="grid-container">
+                {naru.map(nar=>(
+
+                
+               
+                <div class="grid-item"><img src= {nar.image_url} style={{width:'80%',height:'80%'}}/></div>
+                ))}
+                {narutoship.map(nar=>(
+                <div class="grid-item"><img src= {nar.image_url} style={{width:'80%',height:'80%'}}/></div>
+                ))}
+                {lastnarut.map(nar=>(
+                <div class="grid-item"><img src= {nar.image_url} style={{width:'80%',height:'80%'}}/></div>
+                ))}  
+                {boruto.map(nar=>(
+                <div class="grid-item"><img src= {nar.image_url} style={{width:'80%',height:'80%'}}/></div>
+                ))}
+                {narumov.map(nar=>(
+                <div class="grid-item"><img src= {nar.image_url} style={{width:'80%',height:'80%'}}/></div>
                 ))}
                
-            </Card>
-            
+                  
+            </div>
+            </div>
+           
         </div>
     )
 }

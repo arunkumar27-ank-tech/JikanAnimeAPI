@@ -47,3 +47,25 @@
     right:20px;
     top:140px;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-gap: 2px;
+    padding: 10px;
+
+  }
+  
+  .grid-container > div {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+  }
+  .gridmain{
+      width:58%;
+      height:60%;
+      position: absolute;
+      top:140px;
+
+  }
+ 
+  

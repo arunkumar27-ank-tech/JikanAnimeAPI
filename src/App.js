@@ -136,7 +136,8 @@ function App() {
         <HEader handleLogOut={handleLogOut}/>
         <Nav handleLogOut={handleLogOut}/>
         <Route path='/' exact><Chart counts={counts}/></Route>
-        <Route path="/" exact><Mainpage items={items}/></Route>
+        <Route path="/" exact><Mainpage items={items} naru={naru} narutoship={narutoship} lastnarut={lastnarut}
+        boruto={boruto} narumov={narumov}/></Route>
         <Route path="/Naruto" ><Naruto naru={naru}/></Route>
         <Route path="/Narutoshippuden" ><Narutoship narutoship={narutoship}/></Route>
         <Route path="/lastnaruto" ><Narutolast lastnarut={lastnarut}/></Route>
